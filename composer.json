@@ -1,0 +1,18 @@
+{
+  "name": "soshopay/sdk",
+  "description": "Thin PSR-18 Soshopay API client",
+  "homepage": "https://payment-gateway.soshopay.com/docs/",
+  "keywords": ["soshopay", "payments", "ecocash", "laravel"],
+  "support": { "source": "https://github.com/troyben/sosho-pay-php", "issues": "https://github.com/troyben/sosho-pay-php/issues" },
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2", "ext-json": "*", "psr/http-client": "^1.0", "psr/http-factory": "^1.1"
+  },
+  "require-dev": { "guzzlehttp/guzzle": "^7.10", "guzzlehttp/psr7": "^2.8" },
+  "suggest": { "illuminate/support": "Required only for optional Laravel service provider (tested with Laravel 12)", "guzzlehttp/guzzle": "PSR-18 transport for plain PHP; already included by Laravel 12" },
+  "autoload": { "psr-4": { "SoshoPay\\": "src/" } },
+  "extra": { "laravel": { "providers": ["SoshoPay\\Laravel\\SoshoPayServiceProvider"] } },
+  "scripts": { "test": "php tests/run.php" },
+  "config": { "sort-packages": true, "platform": { "php": "8.3.0" } }
+}

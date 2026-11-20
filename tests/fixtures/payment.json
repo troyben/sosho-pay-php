@@ -1,0 +1,9 @@
+{
+  "amount": 100,
+  "currency": "USD",
+  "rail": "ecocash",
+  "customer": {
+    "msisdn": "+263770000001"
+  },
+  "reference": "SDK-QUICKSTART"
+}
